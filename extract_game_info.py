@@ -5,6 +5,8 @@ import requests as re
 year = 2010
 
 data = {
+    'game_season': [],
+    'game_result': [],
     'mp': [],
     'fg': [],
     'fga': [],
@@ -27,6 +29,8 @@ data = {
     'plus_minus': []
 }
 
+tot = 0
+
 while year < 2021:
     sc_url = f'https://www.basketball-reference.com/players/c/curryst01/gamelog/{year}/'
 
@@ -44,9 +48,16 @@ while year < 2021:
                 if val == "":
                     val = None
 
-                data[stat].append(val)
+                # data[stat].append(val)
+
+                if stat == 'game_result':
+                    if data['game_season'][-1] is not None:
+                        data['game_result'].append(val)
+                else:
+                    data[stat].append(val)
 
     year += 1
 
+data['game_season'] = list(filter(None, data['game_season']))
 df = pd.DataFrame(data=data)
 df.to_csv('sc_stats.csv', index=False)
