@@ -7,6 +7,7 @@ year = 2010
 data = {
     'game_season': [],
     'game_result': [],
+    'game_location': [],
     'mp': [],
     'fg': [],
     'fga': [],
@@ -48,11 +49,16 @@ while year < 2021:
                 if val == "":
                     val = None
 
-                # data[stat].append(val)
-
                 if stat == 'game_result':
                     if data['game_season'][-1] is not None:
                         data['game_result'].append(val)
+
+                elif stat == 'game_location':
+                    if data['game_season'][-1] is not None:
+                        if val is None:
+                            data['game_location'].append('home')
+                        else:
+                            data['game_location'].append('away')
                 else:
                     data[stat].append(val)
 
