@@ -22,7 +22,7 @@ In the machine learning part of this project, I used Stephen Curry's individual 
     +/- rating - a statistic that measures the difference in one team's scoring and the opponent team's scoring while the player is in the game.
 </p>
 
-<img src="../steph_curry_images/sc2.jpg" alt="Stephen Curry Shooting" width="300" style="margin: auto; display: block;" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Stephen_Curry_%2816640524995%29.jpg/724px-Stephen_Curry_%2816640524995%29.jpg" alt="Stephen Curry" width="300" style="margin: auto; display: block;" />
 <h2>Machine Learning</h2>
 <p>
     The goal of this project is to use machine learning to predict the +/- rating for Curry's games based on various statistics such as points scored, PER, rebounds, fouls, blocks, and more. There are two machine learning iterations, which include two rounds of feature engineering, along with data science and feature selection, and training the machine learning models with these features and statistics.
