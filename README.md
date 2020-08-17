@@ -12,7 +12,8 @@ In the machine learning part of this project, I used Stephen Curry's individual 
 
 # Stephen Curry Career Analysis
 
-<img src="../steph_curry_images/sc1.jpg" alt="Stephen Curry" width="300" style="margin: auto; display: block;" />
+<!-- <img src="../steph_curry_images/sc1.jpg" alt="Stephen Curry" width="300" style="margin: auto; display: block;" /> -->
+<img src='https://upload.wikimedia.org/wikipedia/commons/b/b6/Stephen_Curry_shooting.jpg' alt='Stephen Curry' width='300' style="margin: auto; display: block;" />
 <h2>Intro</h2>
 <p>
     Stephen Curry, over the past years, has been one of the most popular players in the NBA and of the faces of the league. As he changed the game with his 3-point shooting, Curry has worked his way to 2 MVPs, 3 NBA Championships, 2 Gold Medals at the World Games, and countless records. 
